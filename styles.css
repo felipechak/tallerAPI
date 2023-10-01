@@ -1,0 +1,44 @@
+body{
+    background-color: #000;
+    background-image: url(img/kanye.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    color: azure;
+    overflow: hidden;
+}
+#bgaudio{
+    display: none;
+}
+#quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+#quote{
+    position: relative;
+    margin: 30px;
+    font-size: 75px;
+    text-shadow: 4px 4px #860303;
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 1000px) {
+    body{
+        background-position: bottom;
+    }
+    #quote-container{
+        height: 50vh;
+    }
+    #quote{
+        font-size: 50px;
+    }
+}
